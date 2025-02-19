@@ -1,109 +1,55 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #ffffff; /* White background */
-background-color: #333;
-    color: #333; /* Dark text color for readability */
-}
-
-header {
-    background: #000000; /* Black background for the header */
-    color: #ffffff; /* White text */
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
+    background: linear-gradient(to right, #007bff, #00c6ff);
     text-align: center;
-    background-color: #0056b3;
-    text-decoration-color: #ff0000;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ffffff; /* White links */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
+    color: white;
     padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
     margin-bottom: 10px;
-    color: #ff0000; /* Red for section headers */
 }
 
-.projects {
+form {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.project {
-    background: #f4f4f4; /* Light gray background for project cards */
-    padding: 15px;
-    margin: 10px;
-    flex: 1 0 30%; /* Adjust project card width */
-    border: 2px solid #000000; /* Black border */
-    border-radius: 5px; /* Slightly rounded corners */
-    transition: transform 0.2s; /* Animation on hover */
+label {
+    margin: 10px 0 5px;
 }
 
-
-.project:hover {
-    transform: scale(1.05); /* Slightly enlarge project card on hover */
-}
-
-footer {
-    background: #000000; /* Black footer background */
-    color: #ffffff; /* White text */
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.contact, .social-media {
-    width: 45%;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #000000; /* Black border */
-    border-radius: 5px; /* Slightly rounded corners */
-}
-
-form button {
-    background: #007bff; /* Blue background for buttons */
-    color: white;
+input[type="text"], input[type="email"] {
     padding: 10px;
     border: none;
-    border-radius: 5px; /* Slightly rounded corners */
+    border-radius: 5px;
+    width: 100%;
+}
+
+.checkbox {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-form button:hover {
-    background: #0056b3; /* Darker blue on hover */
-}
-
-.social-media a {
-    color: #ff0000; /* Red for social media links */
-    margin-right: 10px;
-    text-decoration: none;
-}
-
-.social-media a:hover {
-    text-decoration: underline; /* Underline on hover */
+button:hover {
+    background: #ffaa00;
 }

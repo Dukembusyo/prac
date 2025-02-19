@@ -3,84 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Free WiFi Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h2>Welcome to Free WiFi</h2>
+        <p>Please enter your details to connect.</p>
+        <form action="connect.php" method="post">
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#web-design">Web Design</a></li>
-                <li><a href="#web-development">Web Development</a></li>
-                <li><a href="#services">Other Services</a></li>
-            </ul>
-        </nav>
-    </header>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <textarea name="My name" id="JOHN MBUSYO"></textarea>
+            <label class="checkbox">
+                <input type="checkbox" name="agree" required> I agree to see ads before connecting.
+            </label>
 
-    <main>
-        <section id="web-design">
-            <h2>Web Design Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1.</p>
-                </div>
-                <div class="project">
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2.</p>
-                </div>
-                <div class="project">
-                    <h3>Project 3</h3>
-                    <p>Description of Project 3.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="web-development">
-            <h2>Web Development Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1.</p>
-                </div>
-                <div class="project">
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2.</p>
-                </div>
-                <div class="project">
-                    <h3>Project 3</h3>
-                    <p>Description of Project 3.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="services">
-            <h2>Other Online Services</h2>
-            <p>Details about other services you provide.</p>
-        </section>
-    </main>
-
-    <footer>
-        <div class="contact">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-        <div class="social-media">
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+            <button type="submit">Connect</button>
+        </form>
+    </div>
 </body>
 </html>
